@@ -1,11 +1,23 @@
-const avanca = document.querySelectorAll('.btn-proximo');
+document.addEventListener('DOMContentLoaded', () => {
+    // Pega todos os botões
+    const buttons = document.querySelectorAll('.btn-proximo');
 
-avanca.forEach(button => {
-    button.addEventListener('click', function(){
-        const atual = document.querySelector('.ativo');
-        const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
+    // Adiciona o evento de clique para cada botão
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Obtém o valor de "data-proximo" do botão clicado
+            const nextStep = button.getAttribute('data-proximo');
+            
+            // Esconde todos os passos
+            document.querySelectorAll('.passo').forEach(passo => {
+                passo.classList.remove('ativo');
+            });
 
-        atual.classList.remove('ativo');
-        document.getElementById(proximoPasso).classList.add('ativo');
-    })
-})
+            // Mostra o próximo passo
+            const nextStepElement = document.getElementById(`passo-${nextStep}`);
+            if (nextStepElement) {
+                nextStepElement.classList.add('ativo');
+            }
+        });
+    });
+});
