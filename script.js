@@ -1,0 +1,14 @@
+const botoesAvancar = document.querySelectorAll('.botao-avancar');
+
+botoesAvancar.forEach(botao => {
+    botao.addEventListener('click', () => {
+        const etapaAtual = document.querySelector('.etapa.ativa');
+        const proxId = 'etapa-' + botao.getAttribute('data-etapa');
+
+        etapaAtual.classList.remove('ativa');
+        const proxEtapa = document.getElementById(proxId);
+        if (proxEtapa) {
+            proxEtapa.classList.add('ativa');
+        }
+    });
+});

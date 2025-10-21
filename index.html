@@ -1,37 +1,173 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
-</head>
-<body>
-    <main>
-        <div class="passo ativo" id="passo-0">
-            <img src="img/cenario-passo0.png" alt="">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
-        </div>
-        <!-- Outras etapas vão aqui -->
-        <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
-        </div>
-        <div class="passo" id="passo-2">
-            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
-            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
-        </div>
-        <!-- Resto do jogo continua aqui -->
-    </main>
-    <script src="script.js"></script>
-</body>
-</html>
+<main>
+    <section class="etapa ativa" id="etapa-0">
+        <img src="img/cenario-passo0.png" alt="Carta antiga" />
+        <p>Enquanto explorava a biblioteca da escola, encontrei uma carta misteriosa sobre uma cidade oculta, cheia de tesouros e segredos naturais. A carta tinha pistas para encontrá-la e decidi embarcar nessa aventura!</p>
+        <button class="botao-avancar" data-etapa="1">Começar pelo Rio de Janeiro</button>
+        <button class="botao-avancar" data-etapa="2">Explorar Pernambuco</button>
+    </section>
+
+    <section class="etapa" id="etapa-1">
+        <p>Você inicia sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
+        <button class="botao-avancar" data-etapa="3">Buscar a pista no topo</button>
+        <button class="botao-avancar" data-etapa="4">Desistir e voltar para casa</button>
+    </section>
+
+    <section class="etapa" id="etapa-2">
+        <p>Em Pernambuco, visita a histórica cidade de Olinda. Na carta, uma pista diz que a próxima pista está em algum ponto turístico. Onde começar?</p>
+        <button class="botao-avancar" data-etapa="5">Investigar as igrejas antigas</button>body {
+    background-color: #1d4221;
+    color: #fff;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 90%;
+    text-align: center;
+}
+
+.etapa {
+    display: none;
+}
+
+.etapa.ativa {
+    display: block;
+}
+
+button {
+    background-color: #64a712;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    color: white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #52910e;
+}
+
+img {
+    max-width: 90%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+        <button class="botao-avancar" data-etapa="6">Explorar as praias</button>
+    </section>
+
+
+button:hover {
+    background-color: #52910e;
+}
+
+img {
+    max-width: 90%;
+    margin-bottom: 15px;
+    <section class="etapa" id="etapa-3">
+        <p>No topo do Pico da Tijuca, encontra uma inscrição que indica que a próxima pista está no Amazonas.</p>
+        <button class="botao-avancar" data-etapa="7">Seguir para o Amazonas</button>
+    </section>
+
+    <section class="etapa" id="etapa-4">
+        <img src="img/cenario-passo4-voltar-casa.png" alt="Voltando para casa" />
+        <p>Você decide que a aventura é grande demais e retorna para casa, mas sempre se pergunta o que poderia ter descoberto.</p>
+    </section>
+
+    <section class="etapa" id="etapa-5">
+        <p>Nas igrejas de Olinda, descobre um mapa antigo atrás do altar que indica que a próxima pista está no Amazonas.</p>
+        <button class="botao-avancar" data-etapa="7">Viajar para o Amazonas</button>
+    </section>
+
+    <section class="etapa" id="etapa-6">
+        <p>Explorando as praias, encontra uma caverna escondida, mas é um beco sem saída.</p>
+        <button class="botao-avancbody {
+    background-color: #1d4221;
+    color: #fff;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 90%;
+    text-align: center;
+}
+
+.etapa {
+    display: none;
+}
+
+.etapa.ativa {
+    display: block;
+}
+
+button {
+    background-color: #64a712;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    color: white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #52910e;
+}
+
+img {
+    max-width: 90%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+ar" data-etapa="8">Voltar e explorar as igrejas</button>
+    </section>
+
+    <section class="etapa" id="etapa-7">
+        <p>No Amazonas, a aventura se intensifica. Você chega a um rio bifurcado.</p>
+        <button class="botao-avancar" data-etapa="9">Seguir pelo rio à esquerda</button>
+        <button class="botao-avancar" data-etapa="10">Seguir pelo rio à direita</button>
+    </section>
+
+    <section class="etapa" id="etapa-8">
+        <p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora é hora de seguir para o Amazonas!</p>
+        <button class="botao-avancar" data-etapa="7">Ir para o Amazonas</button>
+    </section>
+
+    <section class="etapa" id="etapa-9">
+        <p>O rio à esquerda leva a uma cachoeira secreta com inscrições antigas que revelam a entrada da cidade oculta.</p>
+        <button class="botao-avancar" data-etapa="11">Entrar na cidade oculta</button>
+    </section>
+
+    <section class="etapa" id="etapa-10">
+        <p>O rio à direita termina em um pântano. Embora bonito, não há sinais da cidade oculta aqui.</p>
+        <button class="botao-avancar" data-etapa="12">Voltar e tentar o outro rio</button>
+    </section>
+
+    <section class="etapa" id="etapa-11">
+        <img src="img/cenario-passo11-cidade-perdida.png" alt="Cidade oculta no Amazonas" />
+        <p>Dentro da cidade oculta, descobre tesouros incríveis e decide estudar e proteger esse lugar único.</p>
+    </section>
+
+    <section class="etapa" id="etapa-12">
+        <p>Voltando e escolhendo o rio à esquerda, finalmente encontra a cachoeira secreta e as inscrições que levam à cidade oculta.</p>
+        <button class="botao-avancar" data-etapa="11">Entrar na cidade oculta</button>
+    </section>
+</main>
 
     

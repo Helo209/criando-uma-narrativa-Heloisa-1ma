@@ -1,23 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Pega todos os botões
-    const buttons = document.querySelectorAll('.btn-proximo');
+const botoesAvancar = document.querySelectorAll('.botao-avancar');
 
-    // Adiciona o evento de clique para cada botão
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Obtém o valor de "data-proximo" do botão clicado
-            const nextStep = button.getAttribute('data-proximo');
-            
-            // Esconde todos os passos
-            document.querySelectorAll('.passo').forEach(passo => {
-                passo.classList.remove('ativo');
-            });
+botoesAvancar.forEach(botao => {
+    botao.addEventListener('click', () => {
+        const etapaAtual = document.querySelector('.etapa.ativa');
+        const proxId = 'etapa-' + botao.getAttribute('data-etapa');
 
-            // Mostra o próximo passo
-            const nextStepElement = document.getElementById(`passo-${nextStep}`);
-            if (nextStepElement) {
-                nextStepElement.classList.add('ativo');
-            }
-        });
+        etapaAtual.classList.remove('ativa');
+        const proxEtapa = document.getElementById(proxId);
+        if (proxEtapa) {
+            proxEtapa.classList.add('ativa');
+        }
     });
 });
+
