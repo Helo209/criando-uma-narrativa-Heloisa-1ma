@@ -1,7 +1,7 @@
 body {
-    background-color: #1d4221;
+    background: linear-gradient(135deg, #FF007F, #00C9FF); /* gradiente vibrante */
     color: #fff;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Poppins', sans-serif; /* fonte mais moderna */
     margin: 0;
     height: 700px;
     display: flex;
@@ -10,8 +10,11 @@ body {
 }
 
 main {
-    max-width: 90%;
+    max-width: 80%;
     text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* fundo semitransparente para destacar conteúdo */
+    border-radius: 15px;
 }
 
 .etapa {
@@ -23,25 +26,38 @@ main {
 }
 
 button {
-    background-color: #64a712;
+    background-color: #FF6B81; /* cor de fundo vibrante */
     border: none;
-    padding: 10px 20px;
-    margin: 10px 5px;
+    padding: 12px 25px;
+    margin: 15px 8px;
     color: white;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px; /* bordas arredondadas */
     font-weight: 600;
-    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* sombra suave */
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #52910e;
+    background-color: #FF4B61; /* cor mais intensa ao passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* sombra mais forte no hover */
+    transform: translateY(-2px); /* efeito de "flutuar" */
+}
+
+button:active {
+    transform: translateY(2px); /* efeito de pressionar o botão */
 }
 
 img {
     max-width: 90%;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 
+img:hover {
+    transform: scale(1.05); /* efeito de zoom ao passar o mouse */
+}
