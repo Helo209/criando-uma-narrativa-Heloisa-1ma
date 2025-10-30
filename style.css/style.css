@@ -43,7 +43,7 @@ button {
 
 button:hover {
     background-color: #FF4B61; /* cor mais intensa ao passar o mouse */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* sombra mais forte no hover */
+    box-shadow: 0 8px 12px rgba(174, 6, 216, 0.3); /* sombra mais forte no hover */
     transform: translateY(-2px); /* efeito de "flutuar" */
 }
 
