@@ -1,14 +1,14 @@
-const botoesAvancar = document.querySelectorAll('.botao-avancar');
+const advanceButtons = document.querySelectorAll('.advance-button');
 
-botoesAvancar.forEach(botao => {
-    botao.addEventListener('click', () => {
-        const etapaAtual = document.querySelector('.etapa.ativa');
-        const proxId = 'etapa-' + botao.getAttribute('data-etapa');
+advanceButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const currentStep = document.querySelector('.step.active');
+        const nextId = 'step-' + button.getAttribute('data-step');
 
-        etapaAtual.classList.remove('ativa');
-        const proxEtapa = document.getElementById(proxId);
-        if (proxEtapa) {
-            proxEtapa.classList.add('ativa');
+        currentStep.classList.remove('active');
+        const nextStep = document.getElementById(nextId);
+        if (nextStep) {
+            nextStep.classList.add('active');
         }
     });
 });
