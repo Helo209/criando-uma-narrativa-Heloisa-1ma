@@ -1,71 +1,95 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada do Reencontro</title>
+
+    <!-- Aqui você adiciona o link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!-- Seu conteúdo (as <section> e botões) vai aqui -->
+    </main>
+
+    <!-- Se você tiver um script.js, ele vem no final -->
+    <script src="script.js"></script>
+</body>
+</html>
+
 <main>
     <section class="etapa ativa" id="etapa-0">
-        <img src="img/cenario-passo0.png" alt="Old diary" />
-        <p>While organizing some old boxes, I found a forgotten diary, full of notes about a secret love and the ways to find them again. The diary contained clues about where this person might be, and I decided to embark on this journey of reunion.</p>
-        <button class="botao-avancar" data-etapa="1">Start by searching in the current city</button>
-        <button class="botao-avancar" data-etapa="2">Explore social media and contacts</button>
+        <img src="img/cenario-passo0.png" alt="Diário antigo" />
+        <p>Enquanto organizava umas caixas antigas, encontrei um diário esquecido, cheio de anotações sobre um amor secreto e as formas de encontrá-lo novamente. O diário continha pistas sobre onde essa pessoa poderia estar e decidi embarcar nessa jornada de reencontro.</p>
+        <button class="botao-avancar" data-etapa="1">Começar buscando na cidade atual</button>
+        <button class="botao-avancar" data-etapa="2">Explorar as redes sociais e contatos</button>
     </section>
 
     <section class="etapa" id="etapa-1">
-        <p>You decide to look in the current city, revisiting a special place for you both: the café where you first met, right at dawn, to see if you find any sign.</p>
-        <button class="botao-avancar" data-etapa="3">Leave a letter at the café</button>
-        <button class="botao-avancar" data-etapa="4">Give up and go back home</button>
+        <p>Você decide procurar na cidade atual, revisita um local especial de vocês: o café onde se conheceram, logo ao amanhecer, para ver se encontra algum sinal.</p>
+        <button class="botao-avancar" data-etapa="3">Deixar uma carta no café</button>
+        <button class="botao-avancar" data-etapa="4">Desistir e voltar para casa</button>
     </section>
 
     <section class="etapa" id="etapa-2">
-        <p>On social media, you visit the profile of a mutual friend. The diary says the next clue is in a recent post. Where to begin investigating?</p>
-        <button class="botao-avancar" data-etapa="5">Investigate photo tags</button>
-        <button class="botao-avancar" data-etapa="6">Explore old comments</button>
+        <p>Nas redes sociais, você visita o perfil de um amigo em comum. O diário diz que a próxima pista está em algum post recente. Onde começar a investigar?</p>
+        <button class="botao-avancar" data-etapa="5">Investigar as marcações em fotos</button>
+        <button class="botao-avancar" data-etapa="6">Explorar os comentários antigos</button>
     </section>
 
     <section class="etapa" id="etapa-3">
-        <p>At the café, the waitress recognizes the handwriting on the letter and indicates that this person moved to the South of the country.</p>
-        <button class="botao-avancar" data-etapa="7">Head South</button>
+        <p>No café, a atendente reconhece a caligrafia da carta e indica que essa pessoa se mudou para o Sul do país.</p>
+        <button class="botao-avancar" data-etapa="7">Seguir para o Sul</button>
     </section>
 
     <section class="etapa" id="etapa-4">
-        <img src="img/cenario-passo4-voltar-casa.png" alt="Returning home" />
-        <p>You decide the search is too risky and return home, but you always wonder what might have happened if you had pressed on.</p>
+        <img src="img/cenario-passo4-voltar-casa.png" alt="Voltando para casa" />
+        <p>Você decide que a busca é arriscada demais e retorna para casa, mas sempre se pergunta o que poderia ter acontecido se tivesse seguido adiante.</p>
     </section>
 
     <section class="etapa" id="etapa-5">
-        <p>In the photo tags, you discover that the person is participating in an art event in the South of the country.</p>
-        <button class="botao-avancar" data-etapa="7">Travel South</button>
+        <p>Nas marcações de fotos, descobre que a pessoa está participando de um evento de arte no Sul do país.</p>
+        <button class="botao-avancar" data-etapa="7">Viajar para o Sul</button>
     </section>
 
     <section class="etapa" id="etapa-6">
-        <p>Exploring old comments, you find a conversation about a movie, but there are no clues about the person's whereabouts.</p>
-        <button class="botao-avancar" data-etapa="8">Go back and explore the tags</button>
+        <p>Explorando os comentários antigos, encontra uma conversa sobre um filme, mas não há pistas sobre o paradeiro da pessoa.</p>
+        <button class="botao-avancar" data-etapa="8">Voltar e explorar as marcações</button>
     </section>
 
     <section class="etapa" id="etapa-7">
-        <p>In the South, the excitement intensifies. You arrive at the event location and see two entry doors.</p>
-        <button class="botao-avancar" data-etapa="9">Enter through the door on the left</button>
-        <button class="botao-avancar" data-etapa="10">Enter through the door on the right</button>
+        <p>No Sul, a emoção se intensifica. Você chega ao local do evento e vê duas portas de entrada.</p>
+        <button class="botao-avancar" data-etapa="9">Entrar pela porta à esquerda</button>
+        <button class="botao-avancar" data-etapa="10">Entrar pela porta à direita</button>
     </section>
 
     <section class="etapa" id="etapa-8">
-        <p>Back on the friend's profile, you finally explore the tags and discover the art event clue. Now it's time to head South!</p>
-        <button class="botao-avancar" data-etapa="7">Go South</button>
+        <p>De volta ao perfil do amigo, você finalmente explora as marcações e descobre a pista do evento de arte. Agora é hora de seguir para o Sul!</p>
+        <button class="botao-avancar" data-etapa="7">Ir para o Sul</button>
     </section>
 
     <section class="etapa" id="etapa-9">
-        <p>The door on the left leads to a gallery where the person is exhibiting. The reunion is emotional and seals a new beginning.</p>
-        <button class="botao-avancar" data-etapa="11">Reunite with love</button>
+        <p>A porta à esquerda leva a uma galeria onde a pessoa está expondo. O reencontro é emocionante e sela um novo começo.</p>
+        <button class="botao-avancar" data-etapa="11">Reencontrar o amor</button>
     </section>
 
     <section class="etapa" id="etapa-10">
-        <p>The door on the right leads to a storage room. Although it's an interesting place, there are no signs of the person here.</p>
-        <button class="botao-avancar" data-etapa="12">Go back and try the other door</button>
+        <p>A porta à direita dá em um depósito. Embora seja um lugar interessante, não há sinais da pessoa aqui.</p>
+        <button class="botao-avancar" data-etapa="12">Voltar e tentar a outra porta</button>
     </section>
 
     <section class="etapa" id="etapa-11">
-        <img src="img/cenario-passo11-cidade-perdida.png" alt="Emotional reunion" />
-        <p>Love was reunited. You decide to start over and protect the unique feeling that brought you back together.</p>
+        <img src="img/cenario-passo11-cidade-perdida.png" alt="Reencontro emocionante" />
+        <p>O amor foi reencontrado. Vocês decidem recomeçar e proteger o sentimento único que os uniu novamente.</p>
     </section>
 
     <section class="etapa" id="etapa-12">
-        <p>Going back and choosing the door on the left, you finally find the gallery and the beloved person. The moment is magical.</p>
-        <button class="botao-avancar" data-etapa="11">Reunite with love</button>
+        <p>Voltando e escolhendo a porta à esquerda, você finalmente encontra a galeria e a pessoa amada. O momento é mágico.</p>
+        <button class="botao-avancar" data-etapa="11">Reencontrar o amor</button>
     </section>
-</main>
+</main> 
