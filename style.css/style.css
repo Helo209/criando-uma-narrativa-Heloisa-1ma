@@ -27,13 +27,13 @@ main {
   backdrop-filter: blur(10px);
 }
 
-/* ===== SECTIONS/STEPS ===== */
+/* ===== SECTIONS/STEPS (IMPORTANTE PARA MOSTRAR/ESCONDER) ===== */
 section.step {
-  display: none;
+  display: none; /* Esconde todas as seções */
 }
 
 section.active {
-  display: block;
+  display: block; /* Mostra apenas a seção com a classe 'active' */
 }
 
 section img {
