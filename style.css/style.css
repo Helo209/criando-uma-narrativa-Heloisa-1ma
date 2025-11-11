@@ -1,4 +1,4 @@
-/* ===== RESET BÁSICO ===== */
+/* ===== BASIC RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* ===== FUNDO DA PÁGINA ===== */
+/* ===== PAGE BACKGROUND ===== */
 body {
   background: linear-gradient(135deg, #1b2735, #090a0f);
   color: #f5f5f5;
@@ -17,7 +17,7 @@ body {
   padding: 20px;
 }
 
-/* ===== CONTEÚDO PRINCIPAL ===== */
+/* ===== MAIN CONTENT ===== */
 main {
   max-width: 700px;
   background: rgba(255, 255, 255, 0.05);
@@ -27,12 +27,12 @@ main {
   backdrop-filter: blur(10px);
 }
 
-/* ===== SEÇÕES ===== */
-section.etapa {
+/* ===== SECTIONS/STEPS ===== */
+section.step {
   display: none;
 }
 
-section.ativa {
+section.active {
   display: block;
 }
 
@@ -42,8 +42,8 @@ section img {
   margin-bottom: 20px;
 }
 
-/* ===== BOTÕES ===== */
-button.botao-avancar {
+/* ===== BUTTONS ===== */
+button.advance-button {
   display: block;
   width: 100%;
   margin: 10px 0;
@@ -60,13 +60,13 @@ button.botao-avancar {
   letter-spacing: 1px;
 }
 
-button.botao-avancar:hover {
+button.advance-button:hover {
   background: linear-gradient(45deg, #ff6a00, #ee0979);
   transform: scale(1.05);
   box-shadow: 0 0 15px #ff416c88;
 }
 
-button.botao-avancar:active {
+button.advance-button:active {
   transform: scale(0.98);
   box-shadow: 0 0 5px #ff416c55;
 }
